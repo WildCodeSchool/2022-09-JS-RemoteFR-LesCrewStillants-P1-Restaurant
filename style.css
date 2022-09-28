@@ -1,0 +1,24 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    background-color: #f4d35e;
+    margin-inline-start: 23%;
+    margin-inline-end: 23%;
+  }
+  
+  .reservation {
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .comment {
+    padding-bottom: 50px;
+  }
+  
+  .ok {
+    margin-left: 4rem;
+    width: 2.5rem;
+    background-color: #f4d35e;
+  }
+  
