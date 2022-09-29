@@ -2,30 +2,31 @@
 /* index.html */
 * {
     box-sizing: border-box;
+    margin: 0 ;
 }
 body {
     background-color: #fff;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
 }
 /* header */
 
 header {
-    position:absolute;
-    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
     height: 210px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/banniere-header-mobile.png);
-    top: 90px;
-    left: 0;
     z-index: 100;
 }
 
     header h1 {
-        padding-top: 2rem;
+        padding-left: 5%;
+        padding-right: 5%;
         text-align: center;
-        font-family: 'Open Sans', sans-serif;
-        font-style: normal;
         font-weight: 900;
-        font-size: 2rem;
+        font-size: 1.5rem;
         line-height: 38px;
         color: #FFFFFF;
     }
@@ -39,16 +40,13 @@ header {
         color:#F4D35E
     }
 
+/* Menus */
+
 .menus {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    position: absolute;
-    width: 450px;
+    width: 100%;
     height: 268px;
-    left: 15px;
-    right: 15px;
-    top: 320px;
-
     background:#C2C2C2;
 
 }
@@ -66,34 +64,30 @@ header {
 }
 
 .menus-right h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 1.75rem;
     line-height: 10px;
+    margin-top: 30px;
 
 }
 
 .menus-right p {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5rem;
     text-align: justify;
-    padding-right :15px;
+    padding-right :1rem;
 }
 
 .menus-right a {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 1rem;
     line-height: 22px;
     color: black;
-    padding:1rem;
+    padding-right: 1rem;
     text-decoration: none;
     text-align: right;
+    margin-bottom: 30px;
 }
 
 .arrow {
@@ -101,19 +95,13 @@ header {
 }
 
 .menu-jour {
-    position: absolute;
-    width: 450px;
-    height: 450px;
-    left: 15px;
-    right: 15px;
-    top: 609px;
+    width: 100%;
+    height: 380px;
     background: #F4F4F4;
 }
 
 .menu-jour h2 {
-    font-family: 'Open Sans', sans-serif;
     text-align: center;
-    font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 1.5px;
@@ -124,9 +112,7 @@ header {
 .menu-jour p {
     padding-top: 35px;
     padding-bottom: 35px;
-    font-family: 'Open Sans', sans-serif;
     text-align: center;
-    font-style: normal;
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 23px;
@@ -134,11 +120,10 @@ header {
 }
 
 .btn-reservation {
-    padding-left: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 420px;
+    width: 100%;
     height: 75px;
     background: #F4D35E;
     border: 1px solid #FFFFFF;
@@ -147,8 +132,6 @@ header {
 }
 
 .btn-text {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 600;
     font-size: 24px;
     text-align: center;
@@ -161,39 +144,34 @@ header {
     padding-right: 20px;
 }
 
+/* valeurs */
+
 .valeurs {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    position: absolute;
-    width: 450px;
+    width: 100%;
     height: 230px;
-    left: 15px;
-    right: 15px;
-    top: 1085px;
-    
-
-background: rgba(217, 217, 217, 0.3);
+    background: #DA825D;
 }
 
-.menus-left {
+.valeurs-left {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 15px;
 }
 
-.menus-left h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
+.valeurs-left h2 {
+    margin-top:30px;
+    padding-top: 10px;
+    padding-left: 10px;
     font-weight: 700;
     font-size: 1.75rem;
     line-height: 10px;
-
 }
 
-.menus-left p {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
+.valeurs-left p {
+    margin-top: 30px;
+    padding-left: 10px;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -201,16 +179,16 @@ background: rgba(217, 217, 217, 0.3);
     padding-right :15px;
 }
 
-.menus-left a {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
+.valeurs-left a {
+    margin-top: 20px;
+    font-weight: 700;
     font-size: 1rem;
     line-height: 22px;
     color: black;
     padding-right: 1rem;
     text-decoration: none;
     text-align: right;
+    margin-bottom: 30px;
 }
 
 .icon-valeurs {
@@ -220,5 +198,208 @@ background: rgba(217, 217, 217, 0.3);
 }
 
 }
-/* section */
 
+@media  screen and (min-width: 481px) {
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    body {
+        background-color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+    }
+    /* header */
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 558px;
+        background: url(img/banner-site-restaurant.png);
+        z-index: 100;
+    }
+    
+        header h1 {
+            text-align: left;
+            font-weight: 900;
+            font-size: 3.75rem;
+            line-height: 4.5rem;
+            color: #FFFFFF;
+            padding-left: 50px;
+        }
+    
+        header p {
+            text-align: left;
+            font-family: 'Prata';
+            font-style: normal;
+            font-size: 2.25rem;
+            font-weight: 400;
+            color:#F4D35E;
+            padding-left: 50px;
+            margin-top: 30px;
+        }
+    
+    /* Menus */
+    
+    .menus {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        width: 100%;
+        height: 336px;
+        margin-top: 20px;
+        background:#C2C2C2;
+        padding-left: 20%;
+        padding-right:20%;
+    
+    }
+    
+    .icon-menu {
+        background-image: url(img/menu.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 50px;
+    }
+    
+    .menus-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .menus-right h2 {
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 37.5px;
+    }
+    
+    .menus-right p {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: justify;
+        margin-top: 20px;
+
+    }
+    
+    .menus-right a {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 22px;
+        color: black;
+        text-align: right;
+        margin-top: 20px;
+    }
+    
+    .arrow {
+        margin-left:10px;
+    }
+    
+/* menu du jour */
+
+    .menu-jour {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 430px;
+        background: #F4F4F4;
+        margin-top: 20px;
+    }
+    
+    .menu-jour h2 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 1.5px;
+        color: #F4D35E;
+        padding-top: 50px;
+    }
+    
+    .menu-jour p {
+        padding-top: 50px;
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 23px;
+        color: #F4D35E;
+    }
+    
+    .btn-reservation {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 420px;
+        height: 75px;
+        background: #F4D35E;
+        border: 1px solid #FFFFFF;
+        border-radius: 45px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    
+    .btn-text {
+        font-weight: 600;
+        font-size: 24px;
+        text-align: center;
+        line-height: 28px;
+        color: #000000;
+    }
+    
+    .img-button-click
+    {
+        padding-right: 20px;
+    }
+    
+    /* valeurs */
+    
+    .valeurs {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        width: 100%;
+        height: 400px;
+        background: #DA825D;
+        margin-top: 20px;
+        padding-left: 20%;
+        padding-right:20%;
+    }
+    
+    .valeurs-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .valeurs-left h2 {
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 37.5px;
+    }
+    
+    .valeurs-left p {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: justify;
+        margin-top: 20px;
+    }
+    
+    .valeurs-left a {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 22px;
+        color: black;
+        text-align: right;
+        margin-top: 20px;
+    }
+    
+    .icon-valeurs {
+        margin-left: 2rem;
+        background-image: url(img/valeurs.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
