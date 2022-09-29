@@ -41,12 +41,7 @@ header {
 
 .menus {
     display: grid;
-    grid-template-columns: 1fr 60%;
-    grid-template-rows: 25% 50% 25%;
-    grid-template-areas:
-        "icon title"
-        "icon subtitle"
-        "icon link";
+    grid-template-columns: 1fr 2fr;
     position: absolute;
     width: 450px;
     height: 268px;
@@ -60,52 +55,59 @@ header {
 
 .icon-menu {
     background-image: url(img/menu.svg);
-    grid-area: icon;
-    width: 180px;
-    height: 180px;
-    fill:#949494
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.menus h2 {
-    grid-area: title;
+.menus-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menus-right h2 {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 1.75rem;
+    line-height: 10px;
 
 }
 
-.menus p {
-    grid-area: subtitle;
+.menus-right p {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     text-align: justify;
-    padding-right: 15px;
+    padding-right :15px;
 }
 
-.menus a {
-    grid-area: link;
+.menus-right a {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 22px;
-    color: #F4D35E;
+    color: black;
+    padding:1rem;
+    text-decoration: none;
+    text-align: right;
+}
+
+.arrow {
+    padding-left: 10px;
 }
 
 .menu-jour {
     position: absolute;
     width: 450px;
-    height: 343px;
+    height: 450px;
     left: 15px;
     right: 15px;
     top: 609px;
-
-background: rgba(217, 217, 217, 0.3);
+    background: #F4F4F4;
 }
 
 .menu-jour h2 {
@@ -114,12 +116,14 @@ background: rgba(217, 217, 217, 0.3);
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
-    line-height: 44px;
-    padding-top: 2.5rem;
+    line-height: 1.5px;
     color: #F4D35E;
+    padding-top: 40px;
 }
 
 .menu-jour p {
+    padding-top: 35px;
+    padding-bottom: 35px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     font-style: normal;
@@ -129,18 +133,90 @@ background: rgba(217, 217, 217, 0.3);
     color: #F4D35E;
 }
 
-btn-reservation {
+.btn-reservation {
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    height: 75px;
+    background: #F4D35E;
+    border: 1px solid #FFFFFF;
+    border-radius: 45px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.btn-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    line-height: 28px;
+    color: #000000;
+}
+
+.img-button-click
+{
+    padding-right: 20px;
 }
 
 .valeurs {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     position: absolute;
     width: 450px;
-    height: 343px;
+    height: 230px;
     left: 15px;
     right: 15px;
-    top: 986px;
+    top: 1085px;
+    
 
 background: rgba(217, 217, 217, 0.3);
+}
+
+.menus-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.menus-left h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 10px;
+
+}
+
+.menus-left p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    padding-right :15px;
+}
+
+.menus-left a {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 22px;
+    color: black;
+    padding-right: 1rem;
+    text-decoration: none;
+    text-align: right;
+}
+
+.icon-valeurs {
+    background-image: url(img/valeurs.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 }
