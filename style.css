@@ -1,0 +1,16 @@
+@media scren and (max-width: 480px){
+
+    footer img{
+        display: none;
+    }
+    header{
+         width: 100%;
+         background-color: black;
+    }
+
+    .logoNav{
+        height: 10%;
+        width: 10%;
+    }
+
+}
