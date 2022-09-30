@@ -33,6 +33,8 @@ Work also on a common header and footer.
   
 We validated the first wireframes in 3 steps (paper / Figma) with the client. 
 
+The format of the site will be necessary for mobile screens (480px) and desktop screens (1024px)
+
 
 ### GitHub repository
 
@@ -47,7 +49,6 @@ graph TD;
     dev<-->yo_headerfooter;
 ```
 
-### Demos
-- 10 minutes per team (presentation + demo + questions)
-- Each friday
+### Presentation
 
+The site will be presented in an intermediate validation on September 30 and for the final validation on October 7.
