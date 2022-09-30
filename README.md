@@ -41,10 +41,10 @@ Nous avons créé un dossier sur GitHub dont la structuration est comme ceci :
 ```mermaid
 graph TD;
     main-->dev;
-    dev-->math-index;
-    dev-->lana-plats;
-    dev-->Ju-contact;
-    dev-->yo_headerfooter;
+    dev<-->math-index;
+    dev<-->lana-plats;
+    dev<-->Ju-contact;
+    dev<-->yo_headerfooter;
 ```
 
 ### Demos
