@@ -1,24 +1,67 @@
+body {
+  background-image: url(table.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 h1 {
-    display: flex;
-    justify-content: center;
-    background-color: #f4d35e;
-    margin-inline-start: 23%;
-    margin-inline-end: 23%;
+  text-align: center;
+  background-color: #f4d35e;
+  margin: initial 23%;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 481px) {
+  h1 {
+    font-size: 3rem;
+    margin: 2% 30% 4% 30%;
   }
-  
-  .reservation {
-    display: grid;
-    justify-content: center;
-    gap: 1rem;
+
+  .nom {
+    grid-area: a;
   }
-  
+
+  .fname {
+    grid-area: b;
+  }
+
+  .nbp {
+    grid-area: c;
+  }
+
+  .date {
+    grid-area: d;
+  }
+
   .comment {
-    padding-bottom: 50px;
+    grid-area: e;
+    padding-bottom: 5vh;
   }
-  
+
   .ok {
-    margin-left: 4rem;
-    width: 2.5rem;
-    background-color: #f4d35e;
+    grid-area: f;
   }
-  
+
+  input {
+    padding: 20px;
+    font-size: 1.8rem;
+  }
+
+  form {
+    width: 40%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5em;
+    grid-template-areas:
+      "a a b b"
+      "c c d d"
+      "e e e e"
+      ". f f .";
+  }
+}

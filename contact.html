@@ -4,22 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <title></title>
   </head>
   <body>
     <h1>Réservations</h1>
     <form action="">
-      <div class="reservation">
-        <input type="text" name="name" value="Nom" />
-        <input type="text" name="first-name" value="Prénom" />
-        <input type="text" name="name" value="Nb de pers." />
-        <input type="datetime-local" name="name" />
-        <input type="text" name="name" value="Commentaire" class="comment" />
-        <input type="submit" name="ok" value="OK" class="ok" />
-      </div>
+      <input type="text" name="name" placeholder="Nom" class="nom" />
+      <input type="text" name="first-name" placeholder="Prénom" class="fname" />
+      <input type="text" name="persons" placeholder="Nb de pers." class="nbp" />
+      <input
+        type="datetime-local"
+        id="meeting-time"
+        name="meeting-time"
+        value="2018-06-12T19:30"
+        min="2018-06-07T00:00"
+        max="2023-06-14T00:00"
+        class="date"
+      />
+      <input
+        type="text"
+        name="name"
+        placeholder="Commentaire"
+        class="comment"
+      />
+      <input type="submit" name="ok" value="OK" class="ok" />
     </form>
-    <script src="src/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
