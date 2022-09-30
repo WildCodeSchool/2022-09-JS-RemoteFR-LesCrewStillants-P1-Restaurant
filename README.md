@@ -16,9 +16,9 @@ We were contacted by the Grosso Modo restaurant to build the website in HTML and
 
 ```mermaid
 graph TD;
-    Accueil<->Menus;
-    Accueil<->Valeurs;
-    Accueil<->Réservation;
+    Accueil-->Menus;
+    Accueil-->Valeurs;
+    Accueil-->Réservation;
 ```
 
 Work also on a common header and footer.
