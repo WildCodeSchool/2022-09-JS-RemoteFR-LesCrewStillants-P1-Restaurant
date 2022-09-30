@@ -38,7 +38,7 @@ The format of the site will be necessary for mobile screens (480px) and desktop 
 
 ### GitHub repository
 
-Nous avons créé un dossier sur GitHub dont la structuration est comme ceci : 
+We have created a folder on GitHub that is structured like this: 
 
 ```mermaid
 graph TD;
