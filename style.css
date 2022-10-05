@@ -2,14 +2,51 @@
 /* index.html */
 * {
     box-sizing: border-box;
-    margin: 0 ;
 }
 body {
     background-color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
+    margin: 0;
 }
-/* header */
+
+/* Navigation   */
+
+nav 
+{
+    width: 100%;
+    height: 100px;
+    background: #202021;
+}
+
+nav .mainPages 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .mainPages img {
+    height: 35px;
+}    
+
+nav .mainPages a 
+{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    text-decoration: none;
+    color: #F4D35E;
+}
+ 
+nav a:hover 
+{
+    background: #5A5766
+}
+
+/* Header */
 
 header {
     display: flex;
@@ -106,7 +143,7 @@ header {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 420px;
+    height: 500px;
     background: #616161;
     font-family: 'Prata';
 }
@@ -117,12 +154,12 @@ header {
     font-size: 32px;
     line-height: 1.5px;
     color: #FFF;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .menu-jour p {
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
     font-size: 1.25rem;
     font-weight: 400;
@@ -230,6 +267,39 @@ header {
         font-family: 'Open Sans', sans-serif;
         font-style: normal;
     }
+
+    /* Navigation */
+
+nav 
+{
+    width: 100%;
+    height: 150px;
+    background: #202021;
+}
+
+nav .mainPages 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .mainPages img {
+    margin-top: 25px;
+    height: 100px;
+    width: auto;
+}    
+
+nav .mainPages a 
+{
+    height: 50px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: #F4D35E;
+    margin-top:50px;
+}
+
     /* header */
     
     header {
