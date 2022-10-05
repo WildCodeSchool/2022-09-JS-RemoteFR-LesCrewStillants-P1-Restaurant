@@ -1,7 +1,9 @@
 body {
-  background-image: url(table.jpg);
+  background-image: url(./img/table.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
 }
 
 h1 {
@@ -16,6 +18,18 @@ form {
   gap: 1em;
   width: 50%;
   margin: 0 auto;
+}
+
+.modal {
+  display: none;
+}
+
+.modal-content {
+  display:flex;
+  flex-direction: row-reverse;
+  background-color: #F4D35E;
+  border: 1px solid #202021; 
+  text-align: center;
 }
 
 @media screen and (min-width: 481px) {
@@ -49,6 +63,14 @@ form {
     grid-area: f;
   }
 
+  .modal {
+    grid-area: g;
+  }
+
+  .modal-content {
+    font-size: 1.8rem;
+  }
+
   input {
     padding: 20px;
     font-size: 1.8rem;
@@ -57,11 +79,12 @@ form {
   form {
     width: 40%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 5em;
+    gap: 4.5em;
     grid-template-areas:
       "a a b b"
       "c c d d"
       "e e e e"
-      ". f f .";
+      ". f f ."
+      ". g g .";
   }
 }

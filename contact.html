@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
 
     <title></title>
   </head>
   <body>
     <h1>Réservations</h1>
-    <form action="">
+    <form action="" class = formRes>
       <input type="text" name="name" placeholder="Nom" class="nom" />
       <input type="text" name="first-name" placeholder="Prénom" class="fname" />
       <input type="text" name="persons" placeholder="Nb de pers." class="nbp" />
@@ -29,7 +29,16 @@
         placeholder="Commentaire"
         class="comment"
       />
-      <input type="submit" name="ok" value="OK" class="ok" />
+      <input type="reset" name="ok" value="OK" class="ok" id="button" />
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content"> 
+          <span class="close">&times;</span>
+          <p>Merci d'avoir choisi le Grosso modo</p>
+        </div>
+      
+      </div>
     </form>
     <script src="script.js"></script>
   </body>
