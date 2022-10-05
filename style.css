@@ -19,7 +19,7 @@ label, #toggle
     }
  
     nav .main_pages a {
-        width: 100%;
+        width: 50vh;
     }
  
     label 
@@ -39,8 +39,8 @@ label, #toggle
     }
 
    .logoGro{
-    width: 7.5rem;
-    height: 7.5rem;
+    width: 5vh;
+    height: 5vh;
     
    } 
 
@@ -72,36 +72,6 @@ label, #toggle
 a{
    font-size: 2.5rem;
 }
-
-
-@media all and (max-width: 480px) {
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -154,54 +124,97 @@ header{
 
 
 
+
+
+
+
+
 /* footer */
+
+    
+
+    
 
 
 footer{
-width: 100%;
-background-color: black;
-margin-top: 100%;
-
+   display: flex;
+   justify-content: space-around;
+    background-color: black;
+    width: 100%;
+    margin-top: 450px;
 }
 
-.reseaux img{
-height: 15%;
-width: 15%;
+footer img{
+    height: 5vh;
+    width: 5vh;
 }
 
-.imgTitre{
-height: 35%;
-width: 35%;
-padding-top: 10px;
-
+.text{
+    color: white;
+    font-size: 2vh;   
 }
 
-p{
-color: white;
-}
-
-h3{
-color: white;
-}
-
-.reseaux{
-margin-left: 60%;
-}
-
-.adresse{
-margin-left: 10%;
-padding-top: 5%;
-}
-
-
-@media screen and (min-width: 1200px){
-
-.reseaux{
-    margin-top: -8rem;
-    margin-right:1rem ;
+.grossomodo{
+    height: 20vh;
+    width: 20vh;
 }
 
 
 
 
+
+.reseauS img{
+    display: flex;
+    padding-left: 8vh;
 }
+
+
+/* footer +1024px */
+
+@media screen and(max-width:1024px) {
+    
+
+ 
+footer{
+    width: 100%;
+    display: flex;
+}
+
+.title{
+    color: white;
+}
+
+    .reseauS{
+        
+        display: flex;
+        
+    
+        align-items: center;
+        
+    }
+    .text{
+        padding-left: 2rem;
+        font-size: 3vh;
+    }
+
+}
+
+
+@media all and (min-width:768px) {
+    
+
+section.reseauS {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+   justify-content: center;
+}
+
+}
+
+
+    
+
+   
+
+
