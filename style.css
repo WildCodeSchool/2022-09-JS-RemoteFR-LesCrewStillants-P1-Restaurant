@@ -253,6 +253,44 @@ header {
     
 }
 
+/* footer */
+.imgTitre {
+    grid-area: g;
+    padding: 3vh 3vh;
+  }
+  
+  .adresse {
+    grid-area: p;
+    color:white;
+    padding-left: 3vh;
+  }
+  
+  .reseaux {
+    grid-area: r;
+    display: flex;
+    flex-direction:row;
+    padding-right: 1vh;
+  }
+  
+  .imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    padding: 5vh 5vh;
+    max-height: 5vh;
+    max-width: 5vh;
+    gap:1em;
+  }
+  
+  footer{
+    display: grid;
+    grid-template-areas:"g r"
+                        "p r";
+    width: 100%;
+    background-color: black;
+    margin-top: 5vh;
+    min-height : 35vh;
+  }
 }
 
 @media  screen and (min-width: 481px) {
@@ -500,4 +538,50 @@ nav .mainPages a
         background-repeat: no-repeat;
         background-position: center;
     }
+
+    /* Footer */
+
+    .imgTitre {
+        grid-area: g;
+        width: 50vh;
+        margin-top: 5.2vh;
+        margin-left:26vh;
+      }
+      
+      .adresse {
+        grid-area: p;
+        color:white;
+        padding-left: 200px;
+        padding-top: 40px;
+      }
+      
+      .reseaux {
+        padding-top: 200px;
+        grid-area: r;
+      }
+      
+      .imgs {
+        padding-top: 4vh;
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        height: 80px;
+        gap:1em;
+      }
+      
+      footer{
+        display: grid;
+        grid-template-areas:"g r"
+                            "p r";
+        width: 100%;
+        background-color: black;
+        margin-top: 5vh;
+        height : 55vh;
+      }
+
+      footer h3 {
+        font-family: 'Open-sans', sans-serif;
+        font-weight: 400;
+        color:#fff;
+      }
 }
+      
