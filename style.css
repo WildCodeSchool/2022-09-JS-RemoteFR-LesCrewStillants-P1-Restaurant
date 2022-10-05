@@ -1,16 +1,207 @@
-@media scren and (max-width: 480px){
+label, #toggle
+{
+    display: none;
+}
+ 
+@media all and (max-width: 480px) {
 
-    footer img{
+    nav
+    {
+        height: 100%px;
+    }
+ 
+    nav .main_pages 
+    {
         display: none;
+        flex-direction: column;
+        background: #48435C;
+        height: 30rem;
     }
-    header{
-         width: 100%;
-         background-color: black;
+ 
+    nav .main_pages a {
+        width: 100%;
+    }
+ 
+    label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+ 
+    #toggle:checked + .main_pages {
+        display: flex;
     }
 
-    .logoNav{
-        height: 10%;
-        width: 10%;
-    }
+   .logoGro{
+    width: 7.5rem;
+    height: 7.5rem;
+    
+   } 
+
+  .main_pages a{
+    font-size: 20px;
+  }
+
+
+}
+
+/* dekstop header*/
+
+
+
+
+.main_pages {
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+.logoGro{
+    height: 10rem;
+    width: 10rem;
+    padding-top: 2rem;
+}
+
+a{
+   font-size: 2.5rem;
+}
+
+
+@media all and (max-width: 480px) {
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* + 480 px -------- */
+
+header{
+    width: 100%;
+    background-color: black;
+    height: 250px;
+  }
+ 
+  
+.main_pages{
+    margin-top: -5rem;
+    margin-left: 2rem;
+}
+
+
+   .logoNav{
+       height: 20%;
+       width: 30%;
+       margin-left: 3rem;
+   }
+   
+   .menu{
+       display: block;
+       text-align: right;
+       margin-right: 2rem;
+       
+   }
+   
+   button{
+       background-color: black;
+   }
+   
+   
+   
+   li{
+    list-style: none;    
+   }
+   
+   a{
+       color: #F4D35E;
+       text-decoration: none;
+   }
+
+
+
+
+
+
+
+/* footer */
+
+
+footer{
+width: 100%;
+background-color: black;
+margin-top: 100%;
+
+}
+
+.reseaux img{
+height: 15%;
+width: 15%;
+}
+
+.imgTitre{
+height: 35%;
+width: 35%;
+padding-top: 10px;
+
+}
+
+p{
+color: white;
+}
+
+h3{
+color: white;
+}
+
+.reseaux{
+margin-left: 60%;
+}
+
+.adresse{
+margin-left: 10%;
+padding-top: 5%;
+}
+
+
+@media screen and (min-width: 1200px){
+
+.reseaux{
+    margin-top: -8rem;
+    margin-right:1rem ;
+}
+
+
+
 
 }
