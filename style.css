@@ -280,7 +280,7 @@ nav
 nav .mainPages 
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -288,6 +288,7 @@ nav .mainPages img {
     margin-top: 25px;
     height: 100px;
     width: auto;
+    margin-right:25vh;
 }    
 
 nav .mainPages a 
@@ -298,6 +299,7 @@ nav .mainPages a
     font-weight: 700;
     color: #F4D35E;
     margin-top:50px;
+    padding-right: 10vh;
 }
 
     /* header */
