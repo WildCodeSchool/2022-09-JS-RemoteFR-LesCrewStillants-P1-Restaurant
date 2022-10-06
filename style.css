@@ -172,11 +172,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 90%;
+      width: 400px;
       height: 75px;
       background: #FFF;
       border: 5px solid #F4D35E;
       border-radius: 45px;
+      text-decoration: none;
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
   
@@ -186,6 +187,7 @@
       text-align: center;
       line-height: 28px;
       color: #F4D35E;
+      text-decoration: none;
   }
   
   .img-button-click
@@ -482,14 +484,20 @@
           border: 5px solid #F4D35E;
           border-radius: 45px;
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          text-decoration: none;
       }
       
+      .btn-reservation a:link {
+        text-decoration: none;
+      }
+
       .btn-text {
           font-weight: 600;
           font-size: 24px;
           text-align: center;
           line-height: 28px;
           color: #F4D35E;
+          text-decoration: none;
       }
       
       .img-button-click
