@@ -41,7 +41,14 @@
       color: #F4D35E;
       list-style-type: none;
   }
-   
+
+  nav .mainPages li a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: #F4D35E;
+  }
+  
   nav li:hover 
   {
       background: #5A5766
