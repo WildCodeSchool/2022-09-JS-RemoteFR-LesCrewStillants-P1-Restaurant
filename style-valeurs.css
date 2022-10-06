@@ -1,0 +1,307 @@
+/* Body */
+
+img {
+    width: 500px;
+    height: 500px;
+}
+
+.logoplocaux  {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+div img {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: underline;
+}
+
+h2 {
+    display: flex;
+    text-decoration: underline;
+    justify-content: center;
+    font-size: 5rem;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+/* Navigation   */
+
+nav {
+    width: 100%;
+    height: 100px;
+    background: #202021; 
+} 
+
+nav .mainPages {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .mainPages img {
+    height: 35px;
+}    
+
+nav .mainPages a {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    font-size: 3vh;
+    justify-content: center;
+    height: 100px;
+    text-decoration: none;
+    color: #F4D35E;
+}
+ 
+nav a:hover {
+    background: #5A5766 
+}
+
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 750px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(banner-site-restaurant.PNG);
+    z-index: 100;
+}
+
+header h1 {
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+
+header p {
+    text-align: center;
+    font-family: 'Prata';
+    font-style: normal;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color:#F4D35E
+}
+
+/* footer */
+
+.imgTitre {
+    grid-area: g;
+    width: 30vh;
+    margin-top: 2vh;
+    margin-left: 3vh;
+}
+  
+.adresse {
+    grid-area: p;
+    color:white;
+    padding-top: 4vh;
+    padding-left: 3vh;
+}
+
+.imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+footer img {
+    height: 100%;
+    width: 50px;
+}
+
+footer h3 {
+    padding-top: 500px;
+    padding-left: 30px;
+    font-size: 50px;
+    color: #FFF;
+}
+  
+.reseaux {
+    grid-area: r;
+    padding-right: 20px;
+}
+
+.reseaux img {
+    max-width: 10vh;
+    max-height: 10vh;
+    
+}
+  
+footer{
+    display: grid;
+    grid-template-areas:"g r"
+                        "p r";
+    width: 100%;
+    background-color: black;
+    margin-top: 5vh;
+    min-height : 35vh;
+}
+
+.adresse {
+    padding-left: auto;
+    margin-bottom: 10vh;
+}
+  
+.reseaux {
+    color:white;
+    font-size: 1.3rem;
+    flex-direction: column;
+}
+  
+.imgs {
+    display: flex;
+    flex-direction: row-reverse;
+    gap:1em;
+}
+
+@media  screen and (max-width: 481px) {
+
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    }
+
+body {
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+}
+
+.flex-container {
+    flex-direction: column;
+    text-decoration: underline;
+}
+
+/* Navigation */
+
+nav {
+    width: 100%;
+    height: 150px;
+    background: #202021;
+}
+
+nav .mainPages 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .mainPages img {
+    margin-top: 25px;
+    height: 100px;
+    width: auto;
+    margin-right:25vh;
+}    
+
+nav .mainPages a 
+{
+    height: 50px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: #F4D35E;
+    margin-top:50px;
+    padding-right: 10vh;
+}
+
+/* header */
+    
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 558px;
+    background: url(banner-site-restaurant.PNG);
+    z-index: 100;
+}
+    
+header h1 {
+    text-align: left;
+    font-weight: 900;
+    font-size: 3.75rem;
+    line-height: 4.5rem;
+    color: #FFFFFF;
+    padding-left: 50px;
+}
+    
+header p {
+    text-align: left;
+    font-family: 'Prata';
+    font-style: normal;
+    font-size: 2.25rem;
+    font-weight: 400;
+    color:#F4D35E;
+    padding-left: 50px;
+    margin-top: 30px;
+}
+
+/*Footer */
+
+.imgTitre {
+    grid-area: g;
+    width: 50vh;
+    margin-top: 5.2vh;
+    margin-left:26vh;
+}
+  
+.adresse {
+    grid-area: p;
+    color:white;
+    padding-left: 200px;
+    padding-top: 40px;
+  }
+  
+.reseaux {
+    padding-top: 200px;
+    grid-area: r;
+  }
+  
+.imgs {
+    padding-top: 4vh;
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 80px;
+    gap:1em;
+  }
+  
+footer {
+    display: grid;
+    grid-template-areas:"g r"
+                        "p r";
+    width: 100%;
+    background-color: black;
+    margin-top: 5vh;
+    height : 55vh;
+  }
+
+footer h3 {
+    font-family: 'Open-sans', sans-serif;
+    font-weight: 400;
+    color:#fff;
+  }
+}
