@@ -35,7 +35,7 @@ nav a:hover
 }
 
    /* Navigation */
-@media screen and(max-width:480px) {
+@media screen and (min-width: 481px) {
    nav 
    {
        width: 100%;
@@ -193,9 +193,15 @@ form {
   gap:1em;
 } */
 .reseaux img {
-  max-width: 10vh;
-  max-height: 10vh;
-  
+  max-width: 7vh;
+  max-height: 7vh;
+  padding-top: 1em;
+}
+
+.imgs {
+  display: flex;
+  flex-direction: column;
+  gap:0.3em;
 }
 
 footer{
@@ -228,7 +234,6 @@ footer{
   }
 
   .imgs {
-    display: flex;
     flex-direction: row-reverse;
     gap:1em;
   }
