@@ -18,16 +18,24 @@ nav .mainPages img {
     height: 35px;
 }    
 
-nav .mainPages a 
-{
-    width: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
+nav .mainPages li 
+  {
+      width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+      text-decoration: none;
+      color: #F4D35E;
+      list-style-type: none;
+  }
+
+  nav .mainPages li a {
     text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
     color: #F4D35E;
-}
+  }
  
 nav a:hover 
 {
@@ -57,16 +65,20 @@ nav a:hover
        margin-right:25vh;
    }    
    
-   nav .mainPages a 
-   {
-       height: 50px;
-       text-decoration: none;
-       font-size: 24px;
-       font-weight: 700;
-       color: #F4D35E;
-       margin-top:50px;
-       padding-right: 10vh;
-   }
+   nav .mainPages li 
+  {
+      height: 50px;
+      margin-top:50px;
+      padding-right: 10vh;
+      list-style-type: none;
+  }
+
+  nav .mainPages li a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: #F4D35E;
+  }
   }
    
 /*page contact*/

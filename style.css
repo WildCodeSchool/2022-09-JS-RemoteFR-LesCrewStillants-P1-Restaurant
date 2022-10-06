@@ -30,7 +30,7 @@
       height: 35px;
   }    
   
-  nav .mainPages a 
+  nav .mainPages li 
   {
       width: 25%;
       display: flex;
@@ -39,9 +39,17 @@
       height: 100px;
       text-decoration: none;
       color: #F4D35E;
+      list-style-type: none;
   }
-   
-  nav a:hover 
+
+  nav .mainPages li a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: #F4D35E;
+  }
+  
+  nav li:hover 
   {
       background: #5A5766
   }
@@ -341,16 +349,21 @@
       margin-right:25vh;
   }    
   
-  nav .mainPages a 
+  nav .mainPages li 
   {
       height: 50px;
-      text-decoration: none;
-      font-size: 24px;
-      font-weight: 700;
-      color: #F4D35E;
       margin-top:50px;
       padding-right: 10vh;
+      list-style-type: none;
   }
+
+  nav .mainPages li a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: #F4D35E;
+  }
+
   
       /* header */
       
