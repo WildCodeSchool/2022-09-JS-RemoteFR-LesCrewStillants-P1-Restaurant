@@ -373,8 +373,10 @@
           justify-content: center;
           width: 100%;
           height: 558px;
-          background: url(img/banner-site-restaurant.png);
+          background: url(img/banner-site-restaurant-v2.png);
           z-index: 100;
+          background-repeat: no-repeat;
+          background-size: 100%;
       }
       
           header h1 {
@@ -463,7 +465,7 @@
           align-items: center;
           width: 100%;
           height: 475px;
-          background: #616161;
+          background: linear-gradient(45deg, rgba(18, 17, 17, 0.78), rgba(70, 69, 69, 0.744), rgba(38, 38, 38, 0.842));
           background-repeat: no-repeat;
           font-family: 'Prata';
       }

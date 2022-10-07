@@ -341,47 +341,41 @@
 
     /*---- NAV ----*/
   
-  nav 
-  {
-      width: 100%;
-      height: 100px;
-      background: #202021;
-  }
+    nav 
+    {
+        width: 100%;
+        height: 150px;
+        background: #202021;
+    }
+    
+    nav .mainPages 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav .mainPages img {
+        margin-top: 25px;
+        height: 100px;
+        width: auto;
+        margin-right:25vh;
+    }    
+    
+    nav .mainPages li 
+    {
+        height: 50px;
+        margin-top:50px;
+        padding-right: 10vh;
+        list-style-type: none;
+    }
   
-  nav .mainPages 
-  {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-  }
-  
-  nav .mainPages img {
-      height: 35px;
-  }    
-  
-  nav .mainPages li 
-  {
-      width: 25%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100px;
+    nav .mainPages li a {
       text-decoration: none;
+      font-size: 24px;
+      font-weight: 700;
       color: #F4D35E;
-      list-style-type: none;
-  }
-
-  nav .mainPages li a {
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: 700;
-    color: #F4D35E;
-  }
-  
-  nav li:hover 
-  {
-      background: #5A5766
-  }
+    }
   
     /*-- Header --*/
 
@@ -449,13 +443,12 @@
         order: 2;
         text-align: center;
         font-family: 'Prata';
-        font-size: 16px;
+        font-size: 20px;
 
 
         width: 100%;
         color: #FFFFFF;
         background: linear-gradient(45deg, rgba(18, 17, 17, 0.78), rgba(70, 69, 69, 0.744), rgba(38, 38, 38, 0.842));
-
         padding-bottom: 1rem;
         padding-top: 1rem;
         margin: 0;
@@ -468,7 +461,7 @@
     .dailyMenu h2 {
         font-family: 'Prata';
         text-align: center;
-        font-size: 16px;
+        font-size: 32px;
         padding-left: 1rem;
         margin: 0;
         text-transform: uppercase;
@@ -542,43 +535,44 @@
 
     .imgTitre {
         grid-area: g;
-        padding: 3vh 3vh;
-    }
-
-    .adresse {
+        width: 50vh;
+        margin-top: 5.2vh;
+        margin-left:26vh;
+      }
+      
+      .adresse {
         grid-area: p;
-        color: white;
-        padding-left: 3vh;
-    }
-
-    .reseaux {
+        color:white;
+        padding-left: 200px;
+        padding-top: 40px;
+      }
+      
+      .reseaux {
+        padding-top: 200px;
         grid-area: r;
+      }
+      
+      .imgs {
+        padding-top: 4vh;
         display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-around;
-        align-items: center;
-        padding-right: 1vh;
-    }
-
-    .reseaux img {
-        max-width: 7vh;
-        max-height: 7vh;
-        padding-top: 1em;
-    }
-
-    .imgs {
-        display: flex;
-        flex-direction: column;
-        gap: 0.3em;
-    }
-
-    footer {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        height: 80px;
+        gap:1em;
+      }
+      
+      footer{
         display: grid;
-        grid-template-areas: "g r"
-            "p r";
+        grid-template-areas:"g r"
+                            "p r";
         width: 100%;
         background-color: black;
         margin-top: 5vh;
-        min-height: 35vh;
-    }
+        height : 55vh;
+      }
+
+      footer h3 {
+        font-family: 'Open-sans', sans-serif;
+        font-weight: 400;
+        color:#fff;
+      }
 }
