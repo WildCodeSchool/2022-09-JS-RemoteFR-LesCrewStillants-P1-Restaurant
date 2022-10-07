@@ -67,7 +67,7 @@
        justify-content: center;
        width: 100%;
        height: 210px;
-       background: url(../img/banniere-header-mobile.png);
+       background: url(https://wildcodeschool.github.io/2022-09-JS-RemoteFR-LesCrewStillants-P1-Restaurant/img/banniere-header-mobile.png);
        z-index: 100;
    }
        
@@ -295,7 +295,7 @@ header {
     justify-content: center;
     width: 100%;
     height: 558px;
-    background-image: url(../img/banner-site-restaurant-v2.png);
+    background-image: url(https://wildcodeschool.github.io/2022-09-JS-RemoteFR-LesCrewStillants-P1-Restaurant/img/banner-site-restaurant-v2.png);
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 100;
