@@ -1,0 +1,565 @@
+/* *************************Mobile first *******************/
+
+@media screen and (max-width:480px) {
+
+
+    /* --- Général----*/
+    main,
+    nav,
+    section {
+        box-sizing: border-box;
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        margin: 0;
+    }
+
+    /* Navigation   */
+
+    nav 
+  {
+      width: 100%;
+      height: 100px;
+      background: #202021;
+  }
+  
+  nav .mainPages 
+  {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  nav .mainPages img {
+      height: 35px;
+      padding-left: 20px;
+  }    
+  
+  nav .mainPages li 
+  {
+      width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+      text-decoration: none;
+      color: #F4D35E;
+      list-style-type: none;
+  }
+
+  nav .mainPages li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #F4D35E;
+    padding-right: 10px;
+  }
+  
+  nav li:hover 
+  {
+      background: #5A5766
+  }
+
+
+    /* Header */
+
+    header.menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 210px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.4)), url('../img/menu-header.jpg');
+        background-size: 480px;
+        color: #FFFFFF;
+        align-items: center;
+
+    }
+
+
+
+    /**----Main-*/
+
+    main {
+        margin: 0;
+
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .dailyMenu {
+        display: none;
+    }
+
+    .starter ul,
+    .dishes ul,
+    .dessert ul {
+        list-style-type: none;
+        padding-right: 0.5rem;
+        padding-left: 0;
+        font-size: 14px;
+        align-content: flex-start;
+
+
+    }
+
+    .starter h2,
+    .dishes h2,
+    .dessert h2 {
+        font-size: 14px;
+        text-transform: uppercase;
+
+    }
+
+    /*****------- Grid Menu--------------***/
+    .container {
+
+
+        padding: 1rem;
+
+    }
+
+    /*--- Entrées----*/
+    .starter {
+        display: grid;
+        grid-template-areas: "hs is"
+            "s is";
+
+
+    }
+
+    .starter h2 {
+        display: grid;
+        grid-area: hs;
+    }
+
+    .starter ul {
+        grid-area: s;
+
+    }
+
+    .starter img {
+        grid-area: is;
+    }
+
+
+    /*----------Plats-------------*/
+
+    .dishes {
+
+        display: grid;
+        grid-template-areas: "hp ip"
+            "p ip";
+
+
+    }
+
+    .dishes h2 {
+        grid-area: hp;
+    }
+
+    .dishes ul {
+        grid-area: p;
+
+    }
+
+    .dishes img {
+        grid-area: ip;
+    }
+
+    /*----------Desserts-------------*/
+
+    .dessert {
+
+        display: grid;
+        grid-template-areas: "hd id"
+            "d id";
+
+
+
+    }
+
+    .dessert h2 {
+        grid-area: hd;
+
+    }
+
+    .dessert ul {
+        grid-area: d;
+
+    }
+
+    .dessert img {
+        grid-area: id;
+    }
+
+    /****---- Réservation ----*****/
+
+    .reservation {
+        display: flex;
+        padding: 1rem;
+        padding-left: 1rem;
+
+
+    }
+
+    .btn-reservation {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 75px;
+        background: #FFF;
+        border: 5px solid #F4D35E;
+        border-radius: 45px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        ;
+    }
+
+    .btn-text {
+
+        font-weight: 600;
+        font-size: 1.25rem;
+        text-align: center;
+        line-height: 28px;
+        color: #F4D35E;
+
+    }
+
+    .btn-text a {
+        text-decoration: none;
+        color: #F4D35E;
+    }
+
+    .img-button-click {
+        padding-right: 20px;
+        height: 3rem;
+    }
+
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /*-----------footer------------------ */
+
+    .imgTitre {
+        grid-area: g;
+        padding: 3vh 3vh;
+    }
+
+    .adresse {
+        grid-area: p;
+        color: white;
+        padding-left: 3vh;
+    }
+
+    .reseaux {
+        grid-area: r;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        padding-right: 1vh;
+        padding-left: 4vh;
+        padding-top: 5vh;
+    }
+
+    .reseaux img {
+        max-width: 10vh;
+        max-height: 10vh;
+
+    }
+
+    footer {
+        display: grid;
+        grid-template-areas: "g r"
+            "p r";
+        width: 100%;
+        background-color: black;
+        margin-top: 5vh;
+        min-height: 35vh;
+
+
+    }
+
+
+}
+
+/***********************  DESKTOP ******************************/
+
+
+@media screen and (min-width:480px) {
+
+    /******************** général -----*/
+
+
+    body {
+        scroll-behavior: smooth;
+        box-sizing: border-box;
+        font-family: 'Open Sans';
+        margin: 0;
+    }
+
+    main {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        font-size: 14px;
+
+
+    }
+
+    /*---- NAV ----*/
+  
+    nav 
+    {
+        width: 100%;
+        height: 150px;
+        background: #202021;
+    }
+    
+    nav .mainPages 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav .mainPages img {
+        margin-top: 25px;
+        height: 100px;
+        width: auto;
+        margin-right:25vh;
+    }    
+    
+    nav .mainPages li 
+    {
+        height: 50px;
+        margin-top:50px;
+        padding-right: 10vh;
+        list-style-type: none;
+    }
+  
+    nav .mainPages li a {
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: 700;
+      color: #F4D35E;
+    }
+  
+    /*-- Header --*/
+
+    header h1 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.4)), url('../img/menu-header.jpg');
+        background-size: cover;
+        font-size: 32px;
+        color: white;
+        padding: 7rem;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'OpenSans', sans-serif;
+
+
+    }
+
+    /* Réservation */
+
+    .reservation {
+        display: flex;
+        flex: 1;
+        order: 1;
+        padding: 2rem;
+    }
+
+
+
+    .btn-reservation {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 75px;
+        background: #FFF;
+        border: 5px solid #F4D35E;
+        border-radius: 45px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        ;
+    }
+
+    .btn-text {
+
+        font-weight: 600;
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 28px;
+        color: #F4D35E;
+
+    }
+
+    .btn-text a {
+        text-decoration: none;
+        color: #F4D35E;
+    }
+
+    .img-button-click {
+        padding-right: 20px;
+        height: 3rem;
+    }
+
+    /*-----Menu-du-Jour--*/
+
+
+    .dailyMenu {
+
+        order: 2;
+        text-align: center;
+        font-family: 'Prata';
+        font-size: 20px;
+
+
+        width: 100%;
+        color: #FFFFFF;
+        background: linear-gradient(45deg, rgba(18, 17, 17, 0.78), rgba(70, 69, 69, 0.744), rgba(38, 38, 38, 0.842));
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        margin: 0;
+        border-left: 0;
+
+
+
+    }
+
+    .dailyMenu h2 {
+        font-family: 'Prata';
+        text-align: center;
+        font-size: 32px;
+        padding-left: 1rem;
+        margin: 0;
+        text-transform: uppercase;
+
+    }
+
+    /******* Menu Principal */
+
+
+
+    section.container h2 {
+
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .starter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        font-family: 'OpenSans', sans-serif;
+
+    }
+
+    .starter h2 {
+        font-family: 'OpenSans', sans-serif;
+    }
+
+    .dishes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        font-family: 'OpenSans', sans-serif;
+    }
+
+    .dessert {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        font-family: 'OpenSans', sans-serif;
+    }
+
+    .container {
+        order: 3;
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        width: 100%;
+
+    }
+
+    .container h2 {
+        text-align: center;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+
+    /*----- Footer -----*/
+
+
+    .imgTitre {
+        grid-area: g;
+        width: 50vh;
+        margin-top: 5.2vh;
+        margin-left:26vh;
+      }
+      
+      .adresse {
+        grid-area: p;
+        color:white;
+        padding-left: 200px;
+        padding-top: 40px;
+      }
+      
+      .reseaux {
+        padding-top: 200px;
+        grid-area: r;
+      }
+      
+      .imgs {
+        padding-top: 4vh;
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        height: 80px;
+        gap:1em;
+      }
+      
+      footer{
+        display: grid;
+        grid-template-areas:"g r"
+                            "p r";
+        width: 100%;
+        background-color: black;
+        margin-top: 5vh;
+        height : 55vh;
+      }
+
+      footer h3 {
+        font-family: 'Open-sans', sans-serif;
+        font-weight: 400;
+        color:#fff;
+      }
+}

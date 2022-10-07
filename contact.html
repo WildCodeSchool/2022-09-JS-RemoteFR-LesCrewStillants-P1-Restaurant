@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style-contact.css" />
+
+    <title>Accueil - Grosso Modo - Restaurant - Les meilleures pâtes de Paris !</title>
+  </head>
+
+  <header>
+    <nav>
+      <div class="mainPages">
+          <a href="/index.html"><img class="gm-logo" src="/img/logo-grossomodo.svg" /></a>
+              <li><a href="/menu.html">Nos Menus</a></li>
+          <li><a href="/valeurs.html">Nos valeurs</a></li>
+      </div>
+  </nav>
+     </header>
+
+
+
+
+
+  <body>
+    <h1>Réservations</h1>
+    <form action="" class = formRes>
+      <input type="text" name="name" placeholder="Nom" class="nom" />
+      <input type="text" name="first-name" placeholder="Prénom" class="fname" />
+      <input type="text" name="persons" placeholder="Nb de pers." class="nbp" />
+      <input
+        type="datetime-local"
+        id="meeting-time"
+        name="meeting-time"
+        value="2018-06-12T19:30"
+        min="2018-06-07T00:00"
+        max="2023-06-14T00:00"
+        class="date"
+      />
+      <input
+        type="text"
+        name="name"
+        placeholder="Commentaire"
+        class="comment"
+      />
+      <input type="reset" name="ok" value="OK" class="ok" id="button" />
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content"> 
+          <span class="close">&times;</span>
+          <p>Merci d'avoir choisi le Grosso modo</p>
+        </div>
+      
+      </div>
+    </form>
+    <script src="/js/script.js"></script>
+  </body>
+
+
+
+  <footer>
+    
+  <img class="imgTitre" src="img\logo-grossomodo.svg">
+
+<div class="adresse" >
+    <p>Retrouvez nous au:
+        <br><br>
+       20 Avenue du Président Kenedy
+        <br>
+        75001 Paris
+        <br><br>
+        +33 01 41 03 04 05
+        <br>
+        contact@name_resto.fr</p>
+    </div>
+     <div class="reseaux" >
+    <h3>Et retouvez nous sur :</h3>
+    <div class="imgs">
+    <img class="insta" src="img\instagram.svg">
+    <img class="fb" src="img\facebook.svg">
+    <img class="delivro"  src="img\deliveroo-logo-F4A307B254-seeklogo.com.png" >
+    <img class="uberEat" src="img\5f4921b668ecc70004ae7047.png" >
+    </div>
+     </div>
+
+</footer>
+</html>
