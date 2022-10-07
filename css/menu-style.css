@@ -354,6 +354,7 @@
   
     nav .mainPages li a {
       text-decoration: none;
+      font-family: 'Open Sans', sans-serif;
       font-size: 24px;
       font-weight: 700;
       color: #F4D35E;
