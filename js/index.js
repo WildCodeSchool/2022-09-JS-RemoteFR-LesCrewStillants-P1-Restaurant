@@ -1,7 +1,7 @@
-import entreesMenu from './entrees.js';
-import platsMenu from './plats.js';
-import dessertsMenu from './desserts.js';
-import boissonsMenu from './boissons.js';
+import entreesMenu from 'https://wildcodeschool.github.io/2022-09-JS-RemoteFR-LesCrewStillants-P1-Restaurant/js/entrees.js';
+import platsMenu from 'https://wildcodeschool.github.io/2022-09-JS-RemoteFR-LesCrewStillants-P1-Restaurant/js/plats.js';
+import dessertsMenu from 'https://wildcodeschool.github.io/2022-09-JS-RemoteFR-LesCrewStillants-P1-Restaurant/js/desserts.js';
+import boissonsMenu from 'https://wildcodeschool.github.io/2022-09-JS-RemoteFR-LesCrewStillants-P1-Restaurant/js/boissons.js';
 
 const randomEntree = entreesMenu[Math.floor(Math.random() * entreesMenu.length)];
 const randomPlat = platsMenu[Math.floor(Math.random() * platsMenu.length)];

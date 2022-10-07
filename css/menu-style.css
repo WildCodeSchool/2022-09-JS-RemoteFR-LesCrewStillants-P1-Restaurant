@@ -69,7 +69,7 @@
         width: 100%;
         height: 210px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.4),
-                rgba(0, 0, 0, 0.4)), url('../img/menu-header.jpg');
+                rgba(0, 0, 0, 0.4)), url('https://wildcodeschool.github.io/2022-09-JS-RemoteFR-LesCrewStillants-P1-Restaurant/img/menu-header.jpg');
         background-size: 480px;
         color: #FFFFFF;
         align-items: center;
@@ -363,7 +363,7 @@
 
     header h1 {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4),
-                rgba(0, 0, 0, 0.4)), url('../img/menu-header.jpg');
+                rgba(0, 0, 0, 0.4)), url('https://wildcodeschool.github.io/2022-09-JS-RemoteFR-LesCrewStillants-P1-Restaurant/img/menu-header.jpg');
         background-size: cover;
         font-size: 32px;
         color: white;
