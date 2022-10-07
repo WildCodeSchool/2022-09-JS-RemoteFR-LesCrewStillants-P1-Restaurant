@@ -1,7 +1,7 @@
-import entreesMenu from './js/entrees.js';
-import platsMenu from './js/plats.js';
-import dessertsMenu from './js/desserts.js';
-import boissonsMenu from './js/boissons.js';
+import entreesMenu from './entrees.js';
+import platsMenu from './plats.js';
+import dessertsMenu from './desserts.js';
+import boissonsMenu from './boissons.js';
 
 const randomEntree = entreesMenu[Math.floor(Math.random() * entreesMenu.length)];
 const randomPlat = platsMenu[Math.floor(Math.random() * platsMenu.length)];
@@ -23,5 +23,3 @@ document.getElementById("plats").innerHTML = randomPlat;
 document.getElementById("desserts").innerHTML = randomDessert;
 document.getElementById("boissons").innerHTML = randomBoisson;
 document.getElementById("date").innerHTML = dateLocale;
-
-console.log(dateLocale)
